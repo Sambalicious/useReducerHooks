@@ -12,6 +12,7 @@ import ComponentB from './components/useReducerContext/ComponentB';
 import DataFetching from './components/useReducerContext/DataFetchingOne';
 import DataFetchingTwo from './components/useReducerContext/DataFetchingTwo';
 import ParentConponent from './components/callbackHooks/ParentComponent';
+import Counter from './components/memoHooks/Counter';
 
  export const CountContext = React.createContext();
 
@@ -35,7 +36,7 @@ function App() {
   return (
     <CountContext.Provider value={{countState:count, countDispatch: dispatch}}>
     <div className="App">
-        <ParentConponent />
+        <Counter />
     </div>
     </CountContext.Provider>
   );

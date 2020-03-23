@@ -15,6 +15,7 @@ import ParentConponent from './components/callbackHooks/ParentComponent';
 import Counter from './components/memoHooks/Counter';
 import FocusInput from './components/useRefHooks/FocusInput';
 import HookTimer from './components/useRefHooks/HookTimer';
+import DocTitleOne from './components/useCustomHooks/DocTitleOne';
 
  export const CountContext = React.createContext();
 
@@ -38,7 +39,7 @@ function App() {
   return (
     <CountContext.Provider value={{countState:count, countDispatch: dispatch}}>
     <div className="App">
-        <HookTimer />
+        <DocTitleOne />
     </div>
     </CountContext.Provider>
   );
